@@ -1,37 +1,27 @@
-#ifndef FIVE_H
-#define FIVE_H
-
+#include <cstddef>
 #include <string>
+#include "customVector.h"
 
 class Five {
-private:
-    unsigned char* digits;
-    size_t size;
-    
-    int charToInt(unsigned char c) const;
-    unsigned char intToChar(int n) const;
-    Five createFromDigits(unsigned char* digits_array, size_t digits_size) const;
-    
-public:
-    Five();
-    Five(const char* fiveStr);
-    Five(const Five& other);
-    ~Five();
-    
-    size_t getSize() const;
-    
-    std::string toString() const;
-    void print() const;
-    
-    int compare(const Five& other) const;
-    bool equals(const Five& other) const;
-    bool isGreater(const Five& other) const;
-    bool isLess(const Five& other) const;
-    
-    Five add(const Five& other) const;
-    Five subtract(const Five& other) const;
+    private:
+        CustomVector data;
+    public:
+        Five();
+        Five(const std::string &num);
+        Five(std::initializer_list<unsigned char> list);
+
+
+        ~Five();
+        Five(const Five &o);
+        Five(Five&& o) noexcept;
+
+        Five sum(const Five &o) const;
+        Five sub(const Five &o) const;
+        bool lt(const Five &o) const;
+        bool eq(const Five &o) const;
+        bool mt(const Five &o) const;
+
+        size_t size() const;
+        void print() const;
 };
 
-bool validChar(char c);
-
-#endif

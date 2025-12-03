@@ -1,185 +1,132 @@
-#include "../include/five.h"
+#include "Five.h"
+#include <stdexcept>  
 #include <iostream>
-#include <string>
-#include <cstring>
+#include "customVector.h"
 
-
-// support function
-size_t Five::getSize() const {
-    return size;
-}
-
-bool validChar(char c) {
-    return (c >= '0' && c <= '4');
-}
-
-int Five::charToInt(unsigned char c) const {
-    if (c >= '0' && c <= '4') return c - '0';
-    throw std::invalid_argument("Invalid character for base 5");
-}
-
-unsigned char Five::intToChar(int n) const {
-    if (n < 0 || n > 4) throw std::invalid_argument("Invalid value for base 5");
-    return '0' + n;
-}
-
-Five Five::createFromDigits(unsigned char* digits_array, size_t digits_size) const {
-    Five result;
+Five::Five(){
+    data.push(0);
     
-    result.digits = new unsigned char[digits_size];
-    result.size = digits_size;
-    
-    for (size_t i = 0; i < digits_size; i++) {
-        result.digits[i] = digits_array[i];
+};
+
+
+Five::Five(const std::string &num) {
+    if (num.empty()) {
+        data.push(0);
+        return;
     }
     
-    return result;
+    for (int i = num.length() - 1; i >= 0; i--) {
+        char c = num[i] - '0';
+        if(c < 0 || c > 4) {
+            throw std::invalid_argument("invalid num");
+        }
+        data.push(c);
+    }
+}
+
+Five::Five(const Five &o) : data(o.data) {}
+
+Five::~Five() {}
+
+
+size_t Five::size() const { return data.len(); }
+
+
+Five Five::sum(const Five &o) const {
+    Five res;
+    size_t n = std::max(size(), o.size());
+
+    int per = 0;//перенос
+    for(size_t i = 0; i < n; i++) {
+        int s = per;//сумма
+        if (i < size()) {
+            s += data.get(i);
+        };
+        if (i < o.size()) {
+            s += o.data.get(i);
+        };
+        unsigned char digit = s % 5;
+        per = s / 5;
+        res.data.push(digit);
+    }
+    if (per > 0) {
+        res.data.push(per);
+    }
+    return res;
+
 }
 
 
-// CONSTRUCTORS AND DESTRUCTOR
-Five::Five() : digits(nullptr), size(0) {}
+Five Five::sub(const Five &o) const {
 
-Five::Five(const char* fiveStr) {
-    if (fiveStr == nullptr || fiveStr[0] == '\0') {
-        throw std::invalid_argument("Empty string");
+    if(this->lt(o)){
+    throw std::underflow_error("neg res");
     }
-    
-    for (int i = 0; fiveStr[i] != '\0'; i++) {
-        if (!validChar(fiveStr[i])) {
-            throw std::invalid_argument("Invalid characters for base 5");
+    Five res;
+    size_t n = std::max(size(), o.size());
+    int per = 0;
+    for (size_t i = 0; i < n; i++){
+        int d = data.get(i) - per;
+        if (i < o.size()) {
+            d -= o.data.get(i);
+        }
+
+        if (d < 0) {
+            d += 5;
+            per = 1;
+        } else {
+            per = 0;
+        }
+
+        res.data.push(d);
+    }
+    return res;
+}
+
+bool Five::lt(const Five &o) const {
+    if (size() != o.size()) {
+        return size() < o.size();
+    }
+    for (int i = size() - 1; i >= 0; i--) {
+        if (data.get(i) != o.data.get(i)) {
+            return data.get(i) < o.data.get(i);
+        }
+    }
+    return false;
+}
+
+bool Five::eq(const Five &o) const {
+    if (size() != o.size()) {
+        return false;
+    }
+    size_t n = size();
+    for (size_t i = 0; i < n; i++) {
+       
+        if (data.get(i) != o.data.get(i)) {
+            return false;
         }
     }
 
-    size = strlen(fiveStr);
-    digits = new unsigned char[size];
-    for (int i = 0; i < size; i++) {
-        digits[i] = fiveStr[size - 1 - i];
-    }
+    return true;
 }
 
-Five::Five(const Five& other) {
-    size = other.size;
-    digits = new unsigned char[size];
-    for (int i = 0; i < size; i++) {
-        digits[i] = other.digits[i];
+bool Five::mt(const Five &o) const {
+    if (size() != o.size()) {
+         return size() > o.size();
     }
-}
-
-Five::~Five() {
-    delete[] digits;
-    digits = nullptr;
-    size = 0;
-}
-
-
-//       basic functionality
-std::string Five::toString() const {
-    if (size == 0 || digits == nullptr) {
-        return "0";
+    size_t n = size();
+    for (int i = n - 1; i >= 0; i--) {
+        if (data.get(i)!= o.data.get(i)) {
+        return data.get(i) > o.data.get(i);
+        }
     }
-    
-    std::string result;
-    
-    for (int i = size - 1; i >= 0; i--) {
-        result += digits[i];
-    }
-    
-    return result;
+     
+     return false;
 }
 
 void Five::print() const {
-    std::cout << this->toString() << std::endl;
-}
-
-int Five::compare(const Five& other) const {
-    if (size != other.size) {
-        return (size > other.size) ? 1 : -1;
+    for (int i = size() - 1; i >= 0; i--) {
+        std::cout << (int)data.get(i);
     }
-    for (int i = size - 1; i >= 0; i--) {
-        int digit1 = charToInt(digits[i]);
-        int digit2 = charToInt(other.digits[i]);
-        if (digit1 != digit2) {
-            return (digit1 > digit2) ? 1 : -1;
-        }
-    }
-    return 0;
-}
-
-bool Five::equals(const Five& other) const {
-    return compare(other) == 0;
-}
-
-bool Five::isGreater(const Five& other) const {
-    return compare(other) > 0;
-}
-
-bool Five::isLess(const Five& other) const {
-    return compare(other) < 0;
-}
-
-Five Five::add(const Five& other) const {
-    size_t max_size = (size > other.size) ? size : other.size;
-    max_size += 1;
-    
-    unsigned char* result_digits = new unsigned char[max_size];
-    size_t result_size = 0;
-    
-    int i = 0;
-    int carry = 0;
-    
-    while (i < size || i < other.size || carry > 0) {
-        int digit1 = (i < size) ? charToInt(digits[i]) : 0;
-        int digit2 = (i < other.size) ? charToInt(other.digits[i]) : 0;
-        int sum = digit1 + digit2 + carry;
-        
-        carry = sum / 5;  
-        int resDigit = sum % 5; 
-        
-        result_digits[result_size] = intToChar(resDigit);
-        result_size++;
-        i++;
-    }
-    Five result = createFromDigits(result_digits, result_size);
-    delete[] result_digits;
-    
-    return result;
-}
-
-Five Five::subtract(const Five& other) const {
-    if (this->compare(other) < 0) {
-        throw std::underflow_error("Negative result");
-    }
-    unsigned char* result_digits = new unsigned char[size];
-    size_t result_size = 0;
-    
-    int carry = 0;
-    int i = 0;
-
-    while (i < size) {
-        int digit1 = charToInt(digits[i]);
-        int digit2 = (i < other.size) ? charToInt(other.digits[i]) : 0;
-
-        digit1 -= carry;
-        carry = 0;
-
-        if (digit1 < digit2) {
-            digit1 += 5;  
-            carry = 1;
-        }
-        
-        int diff = digit1 - digit2;
-        result_digits[result_size] = intToChar(diff);
-        result_size++;
-        i++;
-    }
-
-    while (result_size > 1 && result_digits[result_size - 1] == '0') {
-        result_size--;
-    }
-    
-    Five result = createFromDigits(result_digits, result_size);
-    delete[] result_digits;
-    
-    return result;
+    std::cout << std::endl;
 }

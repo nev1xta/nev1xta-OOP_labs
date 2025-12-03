@@ -1,35 +1,35 @@
-cmake_minimum_required(VERSION 3.10)
-project(five)
+  cmake_minimum_required(VERSION 3.10)
+  project(lab2)
 
-set(CMAKE_CXX_STANDARD 20)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_STANDARD 20)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include(FetchContent)
-FetchContent_Declare(
-  googletest
-  GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG v1.15.0
-  TLS_VERIFY false
-)
-set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-FetchContent_MakeAvailable(googletest)
+  # Загрузка Google Test из GitHub
+  include(FetchContent)
+  FetchContent_Declare(
+    googletest
+    GIT_REPOSITORY https://github.com/google/googletest.git
+    GIT_TAG v1.15.0
+  )
+  FetchContent_MakeAvailable(googletest)
 
-add_library(${CMAKE_PROJECT_NAME}_lib STATIC src/five.cpp)
-target_include_directories(${CMAKE_PROJECT_NAME}_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
+  # Создание библиотеки с нашими классами
+  add_library(Five_lib STATIC 
+    src/customVector.cpp 
+    src/Five.cpp
+  )
 
-add_executable(${CMAKE_PROJECT_NAME}_exe main.cpp)
-target_link_libraries(${CMAKE_PROJECT_NAME}_exe PRIVATE ${CMAKE_PROJECT_NAME}_lib)
+  # Указание путей к заголовочным файлам
+  target_include_directories(Five_lib PUBLIC ${CMAKE_SOURCE_DIR}/include)
 
-enable_testing()
+  # Основное приложение
+  add_executable(main_app main.cpp)
+  target_link_libraries(main_app Five_lib)
 
-add_executable(tests test/test.cpp)
-target_link_libraries(tests PRIVATE ${CMAKE_PROJECT_NAME}_lib gtest_main)
+  # Тесты
+  enable_testing()
+  add_executable(tests tests/FiveTest.cpp)
+  target_link_libraries(tests Five_lib gtest_main)
 
-
-target_include_directories(tests PRIVATE 
-    ${CMAKE_SOURCE_DIR}/include
-    ${googletest_SOURCE_DIR}/include
-    ${googletest_BINARY_DIR}/include
-)
-
-add_test(NAME fiveTests COMMAND tests)
+  # Добавление тестов в систему тестирования CMake
+  add_test(NAME FiveTests COMMAND tests)
