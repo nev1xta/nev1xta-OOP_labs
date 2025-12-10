@@ -14,16 +14,18 @@ FetchContent_MakeAvailable(googletest)
 
 set(LIB_SOURCES
     src/npc.cpp
-    src/pegasus.cpp
     src/dragon.cpp
     src/knight.cpp
+    src/pegasus.cpp
+    src/fight_io.cpp 
 )
 
 set(HEADERS
     include/npc.h
-    include/pegasus.h
     include/dragon.h
     include/knight.h
+    include/pegasus.h
+    include/fight_io.h
 )
 
 add_executable(battle_sim src/main.cpp ${LIB_SOURCES})
