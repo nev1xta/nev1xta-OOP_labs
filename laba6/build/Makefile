@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/david/Documents/GitHub/lab6_her
+CMAKE_SOURCE_DIR = /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/david/Documents/GitHub/lab6_her/build
+CMAKE_BINARY_DIR = /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles /mnt/c/Users/david/Documents/GitHub/lab6_her/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -265,6 +265,33 @@ src/dragon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/battle_sim.dir/build.make CMakeFiles/battle_sim.dir/src/dragon.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/npc_tests.dir/build.make CMakeFiles/npc_tests.dir/src/dragon.cpp.s
 .PHONY : src/dragon.cpp.s
+
+src/fight_io.o: src/fight_io.cpp.o
+.PHONY : src/fight_io.o
+
+# target to build an object file
+src/fight_io.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battle_sim.dir/build.make CMakeFiles/battle_sim.dir/src/fight_io.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/npc_tests.dir/build.make CMakeFiles/npc_tests.dir/src/fight_io.cpp.o
+.PHONY : src/fight_io.cpp.o
+
+src/fight_io.i: src/fight_io.cpp.i
+.PHONY : src/fight_io.i
+
+# target to preprocess a source file
+src/fight_io.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battle_sim.dir/build.make CMakeFiles/battle_sim.dir/src/fight_io.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/npc_tests.dir/build.make CMakeFiles/npc_tests.dir/src/fight_io.cpp.i
+.PHONY : src/fight_io.cpp.i
+
+src/fight_io.s: src/fight_io.cpp.s
+.PHONY : src/fight_io.s
+
+# target to generate assembly for a file
+src/fight_io.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/battle_sim.dir/build.make CMakeFiles/battle_sim.dir/src/fight_io.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/npc_tests.dir/build.make CMakeFiles/npc_tests.dir/src/fight_io.cpp.s
+.PHONY : src/fight_io.cpp.s
 
 src/knight.o: src/knight.cpp.o
 .PHONY : src/knight.o
@@ -416,6 +443,9 @@ help:
 	@echo "... src/dragon.o"
 	@echo "... src/dragon.i"
 	@echo "... src/dragon.s"
+	@echo "... src/fight_io.o"
+	@echo "... src/fight_io.i"
+	@echo "... src/fight_io.s"
 	@echo "... src/knight.o"
 	@echo "... src/knight.i"
 	@echo "... src/knight.s"

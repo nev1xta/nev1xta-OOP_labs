@@ -1,7 +1,7 @@
 CMakeFiles/npc_tests.dir/src/npc.cpp.o: \
- /mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/david/Documents/GitHub/lab6_her/include/npc.h \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include/npc.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -198,8 +198,15 @@ CMakeFiles/npc_tests.dir/src/npc.cpp.o: \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/cstring \
- /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/random \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/vector \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/set \
+ /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_set.h \
+ /usr/include/c++/13/bits/stl_multiset.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/math.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -222,22 +229,11 @@ CMakeFiles/npc_tests.dir/src/npc.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc \
- /usr/include/c++/13/bits/random.h /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
- /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
- /usr/include/c++/13/bits/stl_numeric.h \
- /usr/include/c++/13/pstl/glue_numeric_defs.h /usr/include/c++/13/fstream \
- /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/set \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_set.h \
- /usr/include/c++/13/bits/stl_multiset.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/math.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/c++/13/mutex \
+ /usr/include/c++/13/bits/chrono.h /usr/include/c++/13/ratio \
+ /usr/include/c++/13/ctime /usr/include/c++/13/bits/parse_numbers.h \
+ /usr/include/c++/13/bits/unique_lock.h \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include/dragon.h \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include/knight.h \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include/pegasus.h \
+ /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include/fight_io.h

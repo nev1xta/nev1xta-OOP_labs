@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/npc_tests.dir/src/dragon.cpp.o"
   "CMakeFiles/npc_tests.dir/src/dragon.cpp.o.d"
+  "CMakeFiles/npc_tests.dir/src/fight_io.cpp.o"
+  "CMakeFiles/npc_tests.dir/src/fight_io.cpp.o.d"
   "CMakeFiles/npc_tests.dir/src/knight.cpp.o"
   "CMakeFiles/npc_tests.dir/src/knight.cpp.o.d"
   "CMakeFiles/npc_tests.dir/src/npc.cpp.o"

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/mnt/c/Users/david/Documents/GitHub/lab6_her/include
+CXX_INCLUDES = -I/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/include
 
 CXX_FLAGS = -std=gnu++20
 

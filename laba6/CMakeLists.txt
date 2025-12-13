@@ -12,12 +12,14 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
+find_package(Threads REQUIRED) # <--- Добавили поиск потоков
+
 set(LIB_SOURCES
     src/npc.cpp
     src/dragon.cpp
     src/knight.cpp
     src/pegasus.cpp
-    src/fight_io.cpp 
+    src/fight_io.cpp
 )
 
 set(HEADERS
@@ -31,8 +33,9 @@ set(HEADERS
 add_executable(battle_sim src/main.cpp ${LIB_SOURCES})
 target_include_directories(battle_sim PRIVATE include)
 target_compile_features(battle_sim PRIVATE cxx_std_20)
+target_link_libraries(battle_sim Threads::Threads) # <--- Линкуем потоки
 
 add_executable(npc_tests test/npc_test.cpp ${LIB_SOURCES})
 target_include_directories(npc_tests PRIVATE include)
 target_compile_features(npc_tests PRIVATE cxx_std_20)
-target_link_libraries(npc_tests GTest::gtest GTest::gtest_main)
+target_link_libraries(npc_tests GTest::gtest GTest::gtest_main Threads::Threads)

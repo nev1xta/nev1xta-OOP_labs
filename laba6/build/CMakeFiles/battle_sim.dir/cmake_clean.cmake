@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/battle_sim.dir/src/dragon.cpp.o"
   "CMakeFiles/battle_sim.dir/src/dragon.cpp.o.d"
+  "CMakeFiles/battle_sim.dir/src/fight_io.cpp.o"
+  "CMakeFiles/battle_sim.dir/src/fight_io.cpp.o.d"
   "CMakeFiles/battle_sim.dir/src/knight.cpp.o"
   "CMakeFiles/battle_sim.dir/src/knight.cpp.o.d"
   "CMakeFiles/battle_sim.dir/src/main.cpp.o"

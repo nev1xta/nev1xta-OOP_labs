@@ -8,11 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/src/dragon.cpp" "CMakeFiles/battle_sim.dir/src/dragon.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/dragon.cpp.o.d"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/src/knight.cpp" "CMakeFiles/battle_sim.dir/src/knight.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/knight.cpp.o.d"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/src/main.cpp" "CMakeFiles/battle_sim.dir/src/main.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/main.cpp.o.d"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp" "CMakeFiles/battle_sim.dir/src/npc.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/npc.cpp.o.d"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/src/pegasus.cpp" "CMakeFiles/battle_sim.dir/src/pegasus.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/pegasus.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/dragon.cpp" "CMakeFiles/battle_sim.dir/src/dragon.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/dragon.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/fight_io.cpp" "CMakeFiles/battle_sim.dir/src/fight_io.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/fight_io.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/knight.cpp" "CMakeFiles/battle_sim.dir/src/knight.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/knight.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/main.cpp" "CMakeFiles/battle_sim.dir/src/main.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/main.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp" "CMakeFiles/battle_sim.dir/src/npc.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/npc.cpp.o.d"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/pegasus.cpp" "CMakeFiles/battle_sim.dir/src/pegasus.cpp.o" "gcc" "CMakeFiles/battle_sim.dir/src/pegasus.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

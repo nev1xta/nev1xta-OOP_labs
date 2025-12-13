@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/david/Documents/GitHub/lab6_her
+CMAKE_SOURCE_DIR = /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/david/Documents/GitHub/lab6_her/build
+CMAKE_BINARY_DIR = /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/npc_tests.dir/depend.make
@@ -70,97 +70,113 @@ include CMakeFiles/npc_tests.dir/progress.make
 include CMakeFiles/npc_tests.dir/flags.make
 
 CMakeFiles/npc_tests.dir/test/npc_test.cpp.o: CMakeFiles/npc_tests.dir/flags.make
-CMakeFiles/npc_tests.dir/test/npc_test.cpp.o: /mnt/c/Users/david/Documents/GitHub/lab6_her/test/npc_test.cpp
+CMakeFiles/npc_tests.dir/test/npc_test.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/test/npc_test.cpp
 CMakeFiles/npc_tests.dir/test/npc_test.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/npc_tests.dir/test/npc_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/test/npc_test.cpp.o -MF CMakeFiles/npc_tests.dir/test/npc_test.cpp.o.d -o CMakeFiles/npc_tests.dir/test/npc_test.cpp.o -c /mnt/c/Users/david/Documents/GitHub/lab6_her/test/npc_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/npc_tests.dir/test/npc_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/test/npc_test.cpp.o -MF CMakeFiles/npc_tests.dir/test/npc_test.cpp.o.d -o CMakeFiles/npc_tests.dir/test/npc_test.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/test/npc_test.cpp
 
 CMakeFiles/npc_tests.dir/test/npc_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/test/npc_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/lab6_her/test/npc_test.cpp > CMakeFiles/npc_tests.dir/test/npc_test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/test/npc_test.cpp > CMakeFiles/npc_tests.dir/test/npc_test.cpp.i
 
 CMakeFiles/npc_tests.dir/test/npc_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/test/npc_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/lab6_her/test/npc_test.cpp -o CMakeFiles/npc_tests.dir/test/npc_test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/test/npc_test.cpp -o CMakeFiles/npc_tests.dir/test/npc_test.cpp.s
 
 CMakeFiles/npc_tests.dir/src/npc.cpp.o: CMakeFiles/npc_tests.dir/flags.make
-CMakeFiles/npc_tests.dir/src/npc.cpp.o: /mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp
+CMakeFiles/npc_tests.dir/src/npc.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp
 CMakeFiles/npc_tests.dir/src/npc.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/npc_tests.dir/src/npc.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/npc.cpp.o -MF CMakeFiles/npc_tests.dir/src/npc.cpp.o.d -o CMakeFiles/npc_tests.dir/src/npc.cpp.o -c /mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/npc_tests.dir/src/npc.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/npc.cpp.o -MF CMakeFiles/npc_tests.dir/src/npc.cpp.o.d -o CMakeFiles/npc_tests.dir/src/npc.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp
 
 CMakeFiles/npc_tests.dir/src/npc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/npc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp > CMakeFiles/npc_tests.dir/src/npc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp > CMakeFiles/npc_tests.dir/src/npc.cpp.i
 
 CMakeFiles/npc_tests.dir/src/npc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/npc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/lab6_her/src/npc.cpp -o CMakeFiles/npc_tests.dir/src/npc.cpp.s
-
-CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: CMakeFiles/npc_tests.dir/flags.make
-CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: /mnt/c/Users/david/Documents/GitHub/lab6_her/src/pegasus.cpp
-CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/npc_tests.dir/src/pegasus.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/pegasus.cpp.o -MF CMakeFiles/npc_tests.dir/src/pegasus.cpp.o.d -o CMakeFiles/npc_tests.dir/src/pegasus.cpp.o -c /mnt/c/Users/david/Documents/GitHub/lab6_her/src/pegasus.cpp
-
-CMakeFiles/npc_tests.dir/src/pegasus.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/pegasus.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/lab6_her/src/pegasus.cpp > CMakeFiles/npc_tests.dir/src/pegasus.cpp.i
-
-CMakeFiles/npc_tests.dir/src/pegasus.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/pegasus.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/lab6_her/src/pegasus.cpp -o CMakeFiles/npc_tests.dir/src/pegasus.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/npc.cpp -o CMakeFiles/npc_tests.dir/src/npc.cpp.s
 
 CMakeFiles/npc_tests.dir/src/dragon.cpp.o: CMakeFiles/npc_tests.dir/flags.make
-CMakeFiles/npc_tests.dir/src/dragon.cpp.o: /mnt/c/Users/david/Documents/GitHub/lab6_her/src/dragon.cpp
+CMakeFiles/npc_tests.dir/src/dragon.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/dragon.cpp
 CMakeFiles/npc_tests.dir/src/dragon.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/npc_tests.dir/src/dragon.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/dragon.cpp.o -MF CMakeFiles/npc_tests.dir/src/dragon.cpp.o.d -o CMakeFiles/npc_tests.dir/src/dragon.cpp.o -c /mnt/c/Users/david/Documents/GitHub/lab6_her/src/dragon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/npc_tests.dir/src/dragon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/dragon.cpp.o -MF CMakeFiles/npc_tests.dir/src/dragon.cpp.o.d -o CMakeFiles/npc_tests.dir/src/dragon.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/dragon.cpp
 
 CMakeFiles/npc_tests.dir/src/dragon.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/dragon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/lab6_her/src/dragon.cpp > CMakeFiles/npc_tests.dir/src/dragon.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/dragon.cpp > CMakeFiles/npc_tests.dir/src/dragon.cpp.i
 
 CMakeFiles/npc_tests.dir/src/dragon.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/dragon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/lab6_her/src/dragon.cpp -o CMakeFiles/npc_tests.dir/src/dragon.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/dragon.cpp -o CMakeFiles/npc_tests.dir/src/dragon.cpp.s
 
 CMakeFiles/npc_tests.dir/src/knight.cpp.o: CMakeFiles/npc_tests.dir/flags.make
-CMakeFiles/npc_tests.dir/src/knight.cpp.o: /mnt/c/Users/david/Documents/GitHub/lab6_her/src/knight.cpp
+CMakeFiles/npc_tests.dir/src/knight.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/knight.cpp
 CMakeFiles/npc_tests.dir/src/knight.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/npc_tests.dir/src/knight.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/knight.cpp.o -MF CMakeFiles/npc_tests.dir/src/knight.cpp.o.d -o CMakeFiles/npc_tests.dir/src/knight.cpp.o -c /mnt/c/Users/david/Documents/GitHub/lab6_her/src/knight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/npc_tests.dir/src/knight.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/knight.cpp.o -MF CMakeFiles/npc_tests.dir/src/knight.cpp.o.d -o CMakeFiles/npc_tests.dir/src/knight.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/knight.cpp
 
 CMakeFiles/npc_tests.dir/src/knight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/knight.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/lab6_her/src/knight.cpp > CMakeFiles/npc_tests.dir/src/knight.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/knight.cpp > CMakeFiles/npc_tests.dir/src/knight.cpp.i
 
 CMakeFiles/npc_tests.dir/src/knight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/knight.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/lab6_her/src/knight.cpp -o CMakeFiles/npc_tests.dir/src/knight.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/knight.cpp -o CMakeFiles/npc_tests.dir/src/knight.cpp.s
+
+CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: CMakeFiles/npc_tests.dir/flags.make
+CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/pegasus.cpp
+CMakeFiles/npc_tests.dir/src/pegasus.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/npc_tests.dir/src/pegasus.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/pegasus.cpp.o -MF CMakeFiles/npc_tests.dir/src/pegasus.cpp.o.d -o CMakeFiles/npc_tests.dir/src/pegasus.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/pegasus.cpp
+
+CMakeFiles/npc_tests.dir/src/pegasus.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/pegasus.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/pegasus.cpp > CMakeFiles/npc_tests.dir/src/pegasus.cpp.i
+
+CMakeFiles/npc_tests.dir/src/pegasus.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/pegasus.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/pegasus.cpp -o CMakeFiles/npc_tests.dir/src/pegasus.cpp.s
+
+CMakeFiles/npc_tests.dir/src/fight_io.cpp.o: CMakeFiles/npc_tests.dir/flags.make
+CMakeFiles/npc_tests.dir/src/fight_io.cpp.o: /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/fight_io.cpp
+CMakeFiles/npc_tests.dir/src/fight_io.cpp.o: CMakeFiles/npc_tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/npc_tests.dir/src/fight_io.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/npc_tests.dir/src/fight_io.cpp.o -MF CMakeFiles/npc_tests.dir/src/fight_io.cpp.o.d -o CMakeFiles/npc_tests.dir/src/fight_io.cpp.o -c /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/fight_io.cpp
+
+CMakeFiles/npc_tests.dir/src/fight_io.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/npc_tests.dir/src/fight_io.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/fight_io.cpp > CMakeFiles/npc_tests.dir/src/fight_io.cpp.i
+
+CMakeFiles/npc_tests.dir/src/fight_io.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/npc_tests.dir/src/fight_io.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/src/fight_io.cpp -o CMakeFiles/npc_tests.dir/src/fight_io.cpp.s
 
 # Object files for target npc_tests
 npc_tests_OBJECTS = \
 "CMakeFiles/npc_tests.dir/test/npc_test.cpp.o" \
 "CMakeFiles/npc_tests.dir/src/npc.cpp.o" \
-"CMakeFiles/npc_tests.dir/src/pegasus.cpp.o" \
 "CMakeFiles/npc_tests.dir/src/dragon.cpp.o" \
-"CMakeFiles/npc_tests.dir/src/knight.cpp.o"
+"CMakeFiles/npc_tests.dir/src/knight.cpp.o" \
+"CMakeFiles/npc_tests.dir/src/pegasus.cpp.o" \
+"CMakeFiles/npc_tests.dir/src/fight_io.cpp.o"
 
 # External object files for target npc_tests
 npc_tests_EXTERNAL_OBJECTS =
 
 npc_tests: CMakeFiles/npc_tests.dir/test/npc_test.cpp.o
 npc_tests: CMakeFiles/npc_tests.dir/src/npc.cpp.o
-npc_tests: CMakeFiles/npc_tests.dir/src/pegasus.cpp.o
 npc_tests: CMakeFiles/npc_tests.dir/src/dragon.cpp.o
 npc_tests: CMakeFiles/npc_tests.dir/src/knight.cpp.o
+npc_tests: CMakeFiles/npc_tests.dir/src/pegasus.cpp.o
+npc_tests: CMakeFiles/npc_tests.dir/src/fight_io.cpp.o
 npc_tests: CMakeFiles/npc_tests.dir/build.make
 npc_tests: lib/libgtest.a
 npc_tests: lib/libgtest_main.a
 npc_tests: lib/libgtest.a
 npc_tests: CMakeFiles/npc_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable npc_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable npc_tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/npc_tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -172,6 +188,6 @@ CMakeFiles/npc_tests.dir/clean:
 .PHONY : CMakeFiles/npc_tests.dir/clean
 
 CMakeFiles/npc_tests.dir/depend:
-	cd /mnt/c/Users/david/Documents/GitHub/lab6_her/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/david/Documents/GitHub/lab6_her /mnt/c/Users/david/Documents/GitHub/lab6_her /mnt/c/Users/david/Documents/GitHub/lab6_her/build /mnt/c/Users/david/Documents/GitHub/lab6_her/build /mnt/c/Users/david/Documents/GitHub/lab6_her/build/CMakeFiles/npc_tests.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6 /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6 /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build /mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/CMakeFiles/npc_tests.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/npc_tests.dir/depend
 

@@ -10,9 +10,11 @@ struct Knight : public NPC
     void save(std::ostream &os) override;
     bool accept(std::shared_ptr<NPC> visitor) override;
 
+    int get_fight_range() const override { return 10; }
+
     bool fight(std::shared_ptr<Pegasus> other) override;
     bool fight(std::shared_ptr<Dragon> other) override;
     bool fight(std::shared_ptr<Knight> other) override;
 
-    friend std::ostream &operator<<(std::ostream &os, Knight &dragon);
+    friend std::ostream &operator<<(std::ostream &os, Knight &knight);
 };

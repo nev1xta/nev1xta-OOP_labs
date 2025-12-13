@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-src"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-build"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
-  "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-src"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-build"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/tmp"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/src"
+  "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/mnt/c/Users/david/Documents/GitHub/lab6_her/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/mnt/c/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba6/build/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp${cfgdir}") # cfgdir has leading slash
 endif()
