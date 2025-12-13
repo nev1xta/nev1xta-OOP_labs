@@ -10,7 +10,6 @@ struct Dragon : public NPC
     void save(std::ostream &os) override;
     bool accept(std::shared_ptr<NPC> visitor) override;
     
-    // Дистанция атаки дракона 30
     int get_fight_range() const override { return 30; }
 
     bool fight(std::shared_ptr<Dragon> other) override;

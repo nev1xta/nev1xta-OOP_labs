@@ -6,7 +6,7 @@
 #include <set>
 #include <string>
 #include <math.h>
-#include <mutex> // Важно для std::mutex
+#include <mutex> 
 
 struct NPC;
 struct Dragon;
@@ -35,9 +35,8 @@ struct NPC : public std::enable_shared_from_this<NPC>
     std::string name;
     std::vector<std::shared_ptr<IFightObserver>> observers;
     
-    // Новые поля для многопоточности
     bool alive{true};
-    mutable std::mutex mtx; // Мьютекс для защиты полей конкретного NPC
+    mutable std::mutex mtx;
 
     NPC(NpcType t, int _x, int _y, const std::string &_name);
     NPC(NpcType t, std::istream &is);
@@ -45,19 +44,15 @@ struct NPC : public std::enable_shared_from_this<NPC>
     void subscribe(std::shared_ptr<IFightObserver> observer);
     void fight_notify(const std::shared_ptr<NPC> defender, bool win);
     
-    // Проверка дистанции (зависит от типа атакующего)
     virtual bool is_close(const std::shared_ptr<NPC> &other) const;
-    virtual int get_fight_range() const { return 0; } // Дистанция атаки по умолчанию
+    virtual int get_fight_range() const { return 0; } 
 
-    // Движение и жизнь
     virtual void move(int shift_x, int shift_y, int max_x, int max_y);
     bool is_alive() const;
     void must_die();
 
-    // Visitor
     virtual bool accept(std::shared_ptr<NPC> visitor) = 0;
 
-    // Visitors
     virtual bool fight(std::shared_ptr<Dragon> other) = 0;
     virtual bool fight(std::shared_ptr<Knight> other) = 0;
     virtual bool fight(std::shared_ptr<Pegasus> other) = 0;

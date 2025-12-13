@@ -3,9 +3,8 @@
 #include <memory>
 #include <set>
 #include <string>
-#include <mutex> // <--- Добавили
+#include <mutex>
 
-// Глобальный мьютекс для синхронизации вывода в консоль
 extern std::mutex print_mutex; 
 
 class TextObserver : public IFightObserver
