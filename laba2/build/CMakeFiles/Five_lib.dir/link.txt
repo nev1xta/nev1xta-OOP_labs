@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFive_lib.a CMakeFiles/Five_lib.dir/src/customVector.cpp.o CMakeFiles/Five_lib.dir/src/Five.cpp.o
+/usr/bin/ranlib libFive_lib.a

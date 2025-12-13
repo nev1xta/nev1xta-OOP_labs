@@ -55,5 +55,6 @@
         "thread": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Users/david/Documents/GitHub/nev1xta-OOP_labs/laba1"
 }
