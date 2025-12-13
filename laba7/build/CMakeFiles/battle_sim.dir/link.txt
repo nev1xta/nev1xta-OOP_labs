@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/battle_sim.dir/src/main.cpp.o CMakeFiles/battle_sim.dir/src/npc.cpp.o CMakeFiles/battle_sim.dir/src/dragon.cpp.o CMakeFiles/battle_sim.dir/src/knight.cpp.o CMakeFiles/battle_sim.dir/src/pegasus.cpp.o CMakeFiles/battle_sim.dir/src/fight_io.cpp.o -o battle_sim 
