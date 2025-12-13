@@ -2,12 +2,8 @@
 #include "dragon.h"
 #include "knight.h"
 #include "pegasus.h"
-#include "fight_io.h" // Для TextObserver
+#include "fight_io.h"
 #include <cmath>
-
-// -----------------------------------------------------------------------
-// NPC Implementation
-// -----------------------------------------------------------------------
 
 NPC::NPC(NpcType t, int _x, int _y, const std::string &_name) : type(t), x(_x), y(_y), name(_name) {}
 
@@ -32,7 +28,6 @@ void NPC::fight_notify(const std::shared_ptr<NPC> defender, bool win)
 bool NPC::is_close(const std::shared_ptr<NPC> &other) const
 {
     auto dist_sq = std::pow(x - other->x, 2) + std::pow(y - other->y, 2);
-    // Берем радиус атаки у ТЕКУЩЕГО объекта (атакующего)
     int range = get_fight_range(); 
     return (dist_sq <= std::pow(range, 2));
 }
@@ -48,7 +43,6 @@ void NPC::move(int shift_x, int shift_y, int max_x, int max_y)
 
 bool NPC::is_alive() const
 {
-    // Можно добавить mutex, если нужна строгая синхронизация чтения
     return alive;
 }
 
@@ -68,10 +62,6 @@ std::ostream &operator<<(std::ostream &os, NPC &npc)
     os << "{ " << npc.name << ": x:" << npc.x << ", y:" << npc.y << "} ";
     return os;
 }
-
-// -----------------------------------------------------------------------
-// Factory Implementation (Должна быть только один раз!)
-// -----------------------------------------------------------------------
 
 std::shared_ptr<NPC> factory(std::istream &is)
 {
@@ -96,7 +86,6 @@ std::shared_ptr<NPC> factory(NpcType type, int x, int y)
     std::shared_ptr<NPC> result;
     std::string name;
     
-    // Генерация случайного имени
     switch (type) {
         case PegasusType: name = "Pegasus_" + std::to_string(std::rand() % 100); break;
         case DragonType: name = "Dragon_" + std::to_string(std::rand() % 100); break;

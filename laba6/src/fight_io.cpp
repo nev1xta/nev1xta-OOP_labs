@@ -3,10 +3,8 @@
 #include <iostream>
 #include <cstring>
 
-// Определение мьютекса
 std::mutex print_mutex;
 
-// --- TextObserver Implementation ---
 
 std::shared_ptr<IFightObserver> TextObserver::get()
 {
@@ -18,7 +16,6 @@ void TextObserver::on_fight(const std::shared_ptr<NPC> attacker, const std::shar
 {
     if (win)
     {
-        // Блокируем вывод, чтобы сообщение об убийстве не разорвало карту
         std::lock_guard<std::mutex> lck(print_mutex);
         std::cout << std::endl
                   << "Murder --------" << std::endl;
@@ -27,7 +24,6 @@ void TextObserver::on_fight(const std::shared_ptr<NPC> attacker, const std::shar
     }
 }
 
-// --- File IO Implementation ---
 
 void save_to_file(const set_t &array, const std::string &filename)
 {

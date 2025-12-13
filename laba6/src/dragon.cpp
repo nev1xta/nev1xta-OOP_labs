@@ -17,19 +17,16 @@ bool Dragon::accept(std::shared_ptr<NPC> visitor) {
     return visitor->fight(std::static_pointer_cast<Dragon>(shared_from_this()));
 }
 
-// Дракон -> Дракон (Нет)
 bool Dragon::fight(std::shared_ptr<Dragon> other) {
     fight_notify(other, false);
     return false;
 }
 
-// Дракон -> Рыцарь (Нет по правилам K->D->P)
 bool Dragon::fight(std::shared_ptr<Knight> other) {
     fight_notify(other, false);
     return false;
 }
 
-// Дракон -> Пегас (Да)
 bool Dragon::fight(std::shared_ptr<Pegasus> other) {
     int attack = std::rand() % 6 + 1;
     int defense = std::rand() % 6 + 1;
